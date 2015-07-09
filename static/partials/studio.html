@@ -1,0 +1,111 @@
+<div id='loading'>
+	<b>***Loading***</b>
+</div>
+
+<div style="margin-top:10px;margin-bottom:10px;">
+	<button class="btn-info" id="playAll">Play All in Background</button>
+</div>
+
+
+<!--
+
+<a class="inline" value="data12" href="">Show</a>
+<div style="display:none"><div id="data12">Lorem ipsum.</div></div>
+
+
+<a class="grouped_elements" rel="group1" href="/static/images/close.png"><img src="/static/images/close.png" alt=""/></a>
+<a class="grouped_elements" rel="group1" href="/static/images/close.png"><img src="/static/images/close.png" alt=""/></a>  
+
+-->
+<div style="display:none">
+	<div id="new-playlist">
+		<form action="/new-playlist" id="new-pl-form" method="post">
+			Playlist Name: 
+			<div style="margin-top:5px;">
+				<input type="text" id="plname" />
+			</div>
+			<div style="margin-top:10px;text-align:right;">
+				<input type="submit" class="btn-primary" value="Create" />
+			</div>
+		</form>
+	</div>
+</div>
+
+<table border="0" style="background-color:#EFEFFB;margin-right:20px;">
+  <tr>
+    <td style="width:110px;vertical-align:top; padding-left:10px;padding-top:15px;padding-right:10px;">
+      
+      <div style="background-color:#F5D0A9;padding:3px;margin-bottom:3px;"><a href="">#Top Hits</a></div>
+      
+      <div id="custom-plist">
+      	<div ng-repeat="x in studioCtrl.custom" style="background-color:#F5D0A9;padding:3px;margin-bottom:3px;"><a href="{{x.src}}">#{{ x.name }}</a></div>
+      </div>
+      
+      <div style="background-color:grey;height:2px;margin-bottom:5px;margin-top:20px"></div>
+      <div style="">
+      	<a class="inline" value="new-playlist" href="">New Playlist</a>
+      </div>
+    </td>
+    <td style="width:850px;">
+      <!-- Content -->
+      <div id="content" style="background-color:#E6E6E6;padding-top:10px;" class="container clearfix">
+
+
+		<div class="item" ng-repeat="x in studioCtrl.data">
+			<a class="inline" value="{{ x.code }}" href="">
+			<!--<a class="grouped_elements" rel="group2" ng-href="{{ x.imgsrc }}">-->
+				<img data-lightbox="ysongs" ng-src="{{ x.imgsrc }}" width="50px" height="50px" />
+			</a>
+			<div style="display:none"><div id="{{ x.code }}">
+				<!--<iframe width="640" height="390" src="https://www.youtube.com/embed/KlApguhnzWk" frameborder="0" allowfullscreen></iframe>-->
+				{{ x.title }}
+				<div>
+					<a ng-href="{{ x.ysrc }}" target="_blank">
+						<img data-lightbox="ysongs" ng-src="{{ x.imgsrc }}" width="300px"/>
+					</a>
+				</div>
+
+			</div></div>
+		</div>
+
+		
+	  </div>
+      <!-- End -->
+    </td>
+  </tr>
+</table>
+
+<style type="text/css">
+	.item {
+		display: block;
+		float: left;
+		width: 100px;
+		margin: 0 20px 20px 0;
+		-webkit-transition: left .4s ease-in-out, top .4s ease-in-out .4s;
+		-moz-transition: left .4s ease-in-out, top .4s ease-in-out .4s;
+		-ms-transition: left .4s ease-in-out, top .4s ease-in-out .4s;
+		-o-transition: left .4s ease-in-out, top .4s ease-in-out .4s;
+		transition: left .4s ease-in-out, top .4s ease-in-out .4s;
+	}
+	.item img {
+		width: 100px;
+		height: auto;
+	}
+</style>
+
+
+
+<script type="text/javascript">
+$(document).ready(function() {
+	alert(89);
+});
+</script>
+
+<!--
+<div>
+	<div ng-repeat="x in studioCtrl.data" >
+		<img ng-src="{{ x.imgsrc }}" width="300" height="200" />
+	</div>
+</div>
+-->
+

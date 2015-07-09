@@ -1,0 +1,93 @@
+<div style="display:none">
+	<div id="new-clip">
+    <form action="/new-playlist" id="add-new-clip" method="post">
+			YouTube Link:       
+			<div style="margin-top:5px;">
+				<input type="text" id="clipname" />
+        <input type="hidden" id="idd" value="{{ cplaylistCtrl.current.id }}" />
+			</div>
+			<div style="margin-top:10px;text-align:right;">
+        <input id="add-new-clip" type="submit" class="btn-primary" value="Add" />
+			</div>
+		</form>
+	</div>
+</div>
+
+<table border="0" style="background-color:#EFEFFB;margin-right:20px;margin-top:10px;">
+  <tr>
+    <td style="width:110px;vertical-align:top; padding-left:10px;padding-top:15px;padding-right:10px;">
+      
+      <div style="background-color:#F5D0A9;padding:3px;margin-bottom:3px;"><a href="">#{{ cplaylistCtrl.current.name }}</a></div>
+
+      <div style="padding:3px;margin-bottom:3px;"><a href="#/Studio/2011">Back</a></div>
+      
+      
+    </td>
+    <td style="width:850px;">
+      <!-- Content -->
+     		
+      <div style="background-color:#E6E6E6;padding-top:10px;min-height:500px;">
+      	<div style="margin-left:20px;">
+      		<a class="inline" value="new-clip" href="">Add New Video</a>
+      	</div>
+      	
+      	
+      	<div id="content" style="background-color:#E6E6E6;padding-top:10px;" class="container clearfix">
+      		<!--
+          <div ng-repeat=" x in cplaylistCtrl.clips" class="item" style="border:solid thin;border-color:grey;">
+            <img src="{{ x.thumbnail }}" width="200px" />
+
+      		</div>-->
+
+          <div class="item" ng-repeat="x in cplaylistCtrl.clips">
+            <a class="inline" value="{{ x.code }}" href="">
+            <!--<a class="grouped_elements" rel="group2" ng-href="{{ x.imgsrc }}">-->
+              <img data-lightbox="ysongs" ng-src="{{ x.imgsrc }}" width="50px" height="50px" />
+            </a>
+            <div style="display:none"><div id="{{ x.code }}">
+              <!--<iframe width="640" height="390" src="https://www.youtube.com/embed/KlApguhnzWk" frameborder="0" allowfullscreen></iframe>-->
+              {{ x.title }}
+              <div>
+                <a ng-href="{{ x.ysrc }}" target="_blank">
+                  <img data-lightbox="ysongs" ng-src="{{ x.imgsrc }}" width="300px"/>
+                </a>
+              </div>
+
+            </div></div>
+          </div>
+
+  		  </div>
+
+      </div>
+
+      <!-- End -->
+    </td>
+  </tr>
+</table>
+
+<style type="text/css">
+  .item {
+    display: block;
+    float: left;
+    width: 100px;
+    margin: 0 20px 20px 0;
+    -webkit-transition: left .4s ease-in-out, top .4s ease-in-out .4s;
+    -moz-transition: left .4s ease-in-out, top .4s ease-in-out .4s;
+    -ms-transition: left .4s ease-in-out, top .4s ease-in-out .4s;
+    -o-transition: left .4s ease-in-out, top .4s ease-in-out .4s;
+    transition: left .4s ease-in-out, top .4s ease-in-out .4s;
+  }
+  .item img {
+    width: 100px;
+    height: auto;
+  }
+</style>
+
+
+<script type="text/javascript">
+$(document).ready(function() {
+
+
+	
+});
+</script>

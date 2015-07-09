@@ -1,0 +1,15 @@
+<div>
+	<h2>Walking Down the Memory Lane...</h2>
+	
+</div>
+
+<div style="background-color:#EFFBF8;padding:5px;margin-top:20px;margin-right:25px;">
+Let's go back to the year:
+<select id="theYear">
+	<option ng-repeat="year in homeCtrl.years" ng-selected="year == 2011">
+		{{ year }}
+	</option>
+</select>
+<button ng-click="homeCtrl.goToYear()">Go</button>
+
+</div>
