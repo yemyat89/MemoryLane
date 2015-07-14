@@ -39,6 +39,9 @@
         </td>
         <td style="vertical-align:top; border:solid thin;border-color:grey;">
           <div class="main-content">
+            <div id="play-all-container" style="margin-top:10px;margin-bottom:10px;">
+              <button class="btn-info" id="playAll">Play All in Background</button>
+            </div>
             <div ng-view></div>
           </div>
           
@@ -67,13 +70,9 @@
     <script type="text/javascript">
       $(document).ready(function() {
 
-        $('#player').hide();
+        //$('#player').hide();
 
-        $('#new-pl-form').submit(function(event) {
-          alert(1234);
-          event.preventDefault();
-        });
-
+        
         //$("a#inline").fancybox({
         //  'hideOnContentClick': true
         //});
@@ -107,6 +106,8 @@
         //    after the API code downloads.
         var player;
         var currentStr;
+
+
         function onYouTubeIframeAPIReady() {
             player = new YT.Player('player', {
             height: '180',
@@ -152,6 +153,31 @@
         function stopVideo() {
           player.stopVideo();
         }
+
+        var music;
+        var musicCatalog = [];
+        var current = -1;
+
+        $('#playAll').click(function(){
+          alert(12);
+          if (true || player.getPlayerState() !== 1) {
+            $('#player').show('slow');
+            //$('#current-playing').append('<h1>'+rp+'</h1>');
+            $.get('/load-playlist', function(data){
+              music = data;
+              for (var k in data) {
+                musicCatalog.push(k);
+              }
+
+              current += 1;
+              player.loadPlaylist(music[musicCatalog[current]]);
+            });
+            //player.loadPlaylist(ls);
+          }
+
+         });
+
+
         /////////////
     </script>
 

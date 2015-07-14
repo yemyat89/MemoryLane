@@ -1,0 +1,25 @@
+<div>
+
+  Year {{ ctrl.selected_year }}:
+  
+  <span style="margin-left:10px;"></span>
+  
+  <a href="{{ ctrl.songs_url }}">Songs</a>
+  
+  <span style="margin-left:10px;"></span>
+  
+  <a href="{{ ctrl.movies_url }}">Movies</a>
+
+</div>
+
+<hr/>
+
+<h1>{{ ctrl.type_title }}</h1>
+<p>
+  <button id="play_all">Play All {{ ctrl.type_title }}</button>
+</p>
+
+<div ng-repeat="clip in ctrl.clips">
+  <a href="{{ clip.youtube_url }}">{{ clip.title }}</a>
+</div>
+    

@@ -44,7 +44,12 @@ sampleApp.controller('StudioController', ['$routeParams', '$http', '$scope', fun
 
 	var id = 'data12';
 
+	//$(document).unbind('submit');
+	$(document).off('submit', '#new-pl-form');
+
 	$(document).on('submit', '#new-pl-form', function(event){
+	//$('#new-pl-form').submit(function(event){
+		alert(1234);
 		event.preventDefault();
 		var plname = $('#plname', this).val();
 		$http.post('/new-playlist', {"list_name": plname})
@@ -103,14 +108,19 @@ sampleApp.controller('StudioController', ['$routeParams', '$http', '$scope', fun
 			});
 			//console.log($.map(self.data, function(x) {return x.code;}));
 			var ls = $.map(self.data, function(x) {return x.code;});
+			
+			/*
 			$('#playAll').click(function(){
 			 	if (true || player.getPlayerState() !== 1) {
 			 		$('#player').show('slow');
 			 		$('#current-playing').append('<h1>'+rp+'</h1>');
+
 			 		player.loadPlaylist(ls);
 			 	}
 
 			 });
+			*/
+
 			//if (player.getPlayerState() !== 1) {
 				console.log('Loading playlist');
 				//player.loadPlaylist(ls);//['QC5ZwfzVPR0', 'hRarRMOmKq4'])
@@ -133,6 +143,11 @@ sampleApp.controller('StudioController', ['$routeParams', '$http', '$scope', fun
 				console.log('Something goes wrong while requesting /songs');
 			});
 
+}]);
+
+sampleApp.controller('NoneController', [function() {
+	var self = this;
+	self.gg = 1980;
 }]);
 
 sampleApp.controller('SocialController', ['$http', function($http) {

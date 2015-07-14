@@ -44,6 +44,20 @@ def new_playlist():
     
     return jsonify(dict(id=new_id, name=name))
 
+@app.route('/load-playlist')
+def load_playlist():
+    songs = dict(youtube=[])
+    for item in youtubes[:2]:
+        v = item[1]
+        splits = v.split()
+        title, youtube_code = ' '.join(splits[:-1]), splits[-1][1:-1]
+        songs['youtube'].append(youtube_code)
+
+    for k, v in customs.iteritems():
+        songs[k] = map(lambda x: x.split('=')[-1], v['clips'])
+
+    return jsonify(songs)
+
 @app.route('/new-clip', methods=['POST'])
 def new_clip():
     global customs
