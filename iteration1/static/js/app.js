@@ -60,7 +60,8 @@ my_app.controller('StudioController', ['$routeParams', '$http', function($routeP
   $http.get(request_url)
     .success(function(data, status, headers, config) {
       $.each(data.result, function(index, element){
-        element['youtube_url'] = 'http://youtube.com/watch?v=' + element.youtube_code
+        element['youtube_url'] = 'http://youtube.com/watch?v=' + element.youtube_code;
+        element['youtube_thumbnail'] = 'http://img.youtube.com/vi/' + element.youtube_code + '/hqdefault.jpg';
         self.clips.push(element);
       });
     })
