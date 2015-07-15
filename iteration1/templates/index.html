@@ -1,22 +1,45 @@
+<!DOCTYPE html>
+
 <html lang="en">
+
   <head>
+    
     <title>The Memories: Ye Myat</title>
+    
+    <link rel="stylesheet" href="static/css/jquery.fancybox.css">
+
   </head>
  
   <body ng-app="MemoryLaneApp">
     
     <div>
-      <a href="">Home</a> <a href="">About</a>
+      <a href="/">Home</a>
+      <span style="padding-left:5px;"></span>
+      <a class="inline" value="new-playlist" href="">About</a>
     </div>
 
     <hr/>
 
+    <div style="display:none">
+      <div id="new-playlist" style="width:100px;">
+        <div style="text-align:center">
+          <img src="http://www.designbolts.com/wp-content/uploads/2014/05/Quicksilver-Minion.jpg" width="50px" />
+          <b>About. Huh?</b>
+        </div>
+        <p style="width:200px;">It's about remembering the past and doing that in tunes ;-)</p>
+      </div>
+    </div>
+
     <table>
       <tr>
         <td style="vertical-align:top;">
-          <div id="player" style="padding:5px;"></div>
+          <div id="player_container">
+            <div id="player" style="padding:5px;"></div>
+            <hr/>
+            <div><button id="stop_all" class="btn-primary">Stop Playing</button></div>
+          </div>
         </td>
-        <td style="vertical-align:top;padding-left:10px;">
+        <td style="vertical-align:top;padding-left:10px;background-color:#EFFBEF;padding:8px;">
           <div ng-view></div>
         </td>
       </tr>
@@ -26,13 +49,17 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.1/angular.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.1/angular-route.min.js"></script>
-    
+
+    <script type="text/javascript" src="/static/js/jquery.fancybox.pack.js"></script>
+
     <script src="static/js/modernizr-2.5.3.min.js"></script>
     <script src="static/js/jquery.masonry.min.js"></script>
 
     <script src="static/js/app.js"></script>
 
     <script type="text/javascript">
+
+      $('#player_container').hide();
 
       // YouTube player
       var tag = document.createElement('script');
@@ -63,7 +90,22 @@
 
 
       $(document).ready(function(){
-        $('#player').hide();
+        
+        $("#stop_all").click(function(event){
+          console.log("StopAll is pressed.");
+          if (player !== undefined) {
+            $("#player_container").hide();
+            if (player.getPlayerState() == 1) {
+              player.stopVideo();
+            }
+          }
+        });
+
+        $("a.inline").fancybox({
+          'content': $('#new-playlist').html(),
+          'hideOnContentClick': true
+        });
+
       });
     </script>
 

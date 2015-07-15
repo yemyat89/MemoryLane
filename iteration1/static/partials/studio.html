@@ -16,9 +16,10 @@
 
 <h1>{{ ctrl.type_title }}</h1>
 <p>
-  <button id="play_all">Play All {{ ctrl.type_title }}</button>
+  <button class="btn-primary" id="play_all">Play All {{ ctrl.type_title }}</button>
 </p>
 
+<!--
 <div id="content" class="container clearfix">
 	<div class="item" ng-repeat="clip in ctrl.clips">
     <div>
@@ -28,6 +29,26 @@
     </div>
 	</div>
 </div>
+-->
+
+
+<div class="item" ng-repeat="clip in ctrl.clips">
+  <a class="inline" value="{{ clip.youtube_code }}" href="">
+    <img data-lightbox="ysongs" ng-src="{{ clip.youtube_thumbnail }}" />
+  </a>
+  <div style="display:none">
+    <div id="{{ clip.youtube_code }}">
+      {{ clip.title }}
+      <div>
+        <a ng-href="{{ clip.youtube_url }}" target="_blank">
+          <img data-lightbox="ysongs" ng-src="{{ clip.youtube_thumbnail }}" width="300px"/>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</div>
+
 
 <style type="text/css">
   .item {

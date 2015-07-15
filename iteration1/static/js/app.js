@@ -24,8 +24,15 @@ my_app.controller('HomeController', ['$location', function($location) {
   var self = this;
   self.years_display = [];
 
-  for (i = 2000; i < 2015; i++) {
+  for (i = 2006; i < 2015; i++) {
     self.years_display.push(i);
+  }
+
+  if (player !== undefined) {
+    $("#player_container").hide();
+    if (player.getPlayerState() == 1) {
+      player.stopVideo();
+    }
   }
 
   self.goToYear = function() {
@@ -34,7 +41,7 @@ my_app.controller('HomeController', ['$location', function($location) {
   }
 }]);
 
-my_app.controller('StudioController', ['$routeParams', '$http', function($routeParams, $http) {
+my_app.controller('StudioController', ['$routeParams', '$http', '$scope', function($routeParams, $http, $scope) {
   var self = this;
   
   self.selected_year = $routeParams.selected_year;
@@ -60,6 +67,7 @@ my_app.controller('StudioController', ['$routeParams', '$http', function($routeP
   $http.get(request_url)
     .success(function(data, status, headers, config) {
       $.each(data.result, function(index, element){
+        element['title'] = element['title']
         element['youtube_url'] = 'http://youtube.com/watch?v=' + element.youtube_code;
         element['youtube_thumbnail'] = 'http://img.youtube.com/vi/' + element.youtube_code + '/hqdefault.jpg';
         self.clips.push(element);
@@ -72,11 +80,24 @@ my_app.controller('StudioController', ['$routeParams', '$http', function($routeP
 
     // Click event handlers
     $('#play_all').click(function(event){
-      $('#player').show();
+      $('#player_container').show();
       var ls = $.map(self.clips, function(item){
         return item.youtube_code;
       });
       player.loadPlaylist(ls);
+    });
+
+
+    // Fancybox register
+    $scope.$watch(function ngModelWatch() {
+      $(".inline").click(function(e) {
+        var id = $(this).attr('value');
+        console.log(id);
+        $("a.inline").fancybox({
+          'content': $('#'+ id).html(),
+          'hideOnContentClick': true
+        });
+      });
     });
   
 }]);

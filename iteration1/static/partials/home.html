@@ -1,13 +1,29 @@
+<!--
 <div>
 	<h2>Walking Down the Memory Lane...</h2>
 </div>
+-->
 
-<div>
-	Let's go back to the year:
-	<select id="selected_year">
-		<option ng-repeat="year in ctrl.years_display" ng-selected="year == 2007">
-			{{ year }}
-		</option>
-	</select>
-	<button ng-click="ctrl.goToYear()">Go</button>
-</div>
+<table border=0>
+    <tr>
+        <td style="padding:10px;">
+        	<img src="http://www.designbolts.com/wp-content/uploads/2014/05/Quicksilver-Minion.jpg" width="100px" />
+        </td>
+        <td>
+        	<h2>Remembering the past in tunes ;-)</h2>
+
+        	<div style="font-size:17px;padding-top:10px;">
+				Let's go back to the year:
+				<select id="selected_year">
+					<option ng-repeat="year in ctrl.years_display" ng-selected="year == 2007">
+						{{ year }}
+					</option>
+				</select>
+				<button class="btn-primary" ng-click="ctrl.goToYear()">Go</button>
+			</div>
+
+        </td>
+    </tr>
+</table>
+
+
