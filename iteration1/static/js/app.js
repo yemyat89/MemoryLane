@@ -27,8 +27,8 @@ my_app.controller('HomeController', ['$location', function($location) {
   for (i = 2006; i < 2015; i++) {
     self.years_display.push(i);
   }
-
-  if (player !== undefined) {
+  
+  if (player !== 0) {
     $("#player_container").hide();
     if (player.getPlayerState() == 1) {
       player.stopVideo();

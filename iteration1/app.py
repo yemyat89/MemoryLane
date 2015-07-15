@@ -1,6 +1,7 @@
 from random import shuffle
 from flask import (Flask, request, make_response, jsonify, redirect)
 from util import getData
+import os
 
 app = Flask(__name__)
 
@@ -33,4 +34,5 @@ def getMoviesOfYear(year):
 	return jsonify(dict(result=data))
 
 if __name__ == '__main__':
-	app.run(debug=True, host='0.0.0.0')
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host='0.0.0.0', port=port) #app.run(debug=True, host='0.0.0.0')
