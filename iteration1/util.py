@@ -1,7 +1,7 @@
 import cPickle as pickle
 
 def getData():
-	path = './../data/pickles'
+	path = 'data/pickles'
 
 	songs = {}
 	movies = {}
