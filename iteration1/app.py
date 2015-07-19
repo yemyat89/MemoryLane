@@ -16,6 +16,15 @@ for v in songs.itervalues():
 		label = ' '.join(each_song[1].split()[:-1])
 		song_indices[index] = label
 
+
+movie_indices = {}
+for v in movies.itervalues():
+	for each_movie in v:
+		index = str(each_movie[1].split()[-1][1:-1])
+		label = ' '.join(each_movie[1].split()[:-1])
+		movie_indices[index] = label
+
+
 @app.route('/')
 def index():
 	return make_response(open('templates/index.html').read())
@@ -24,6 +33,10 @@ def index():
 @app.route('/get_song_indices')
 def get_song_indices():
 	return jsonify(dict(results=song_indices))
+
+@app.route('/get_movie_indices')
+def get_movie_indices():
+	return jsonify(dict(results=movie_indices))
 
 @app.route('/songs/<year>')
 def getSongsOfYear(year):
@@ -41,13 +54,15 @@ def getSongsOfYear(year):
 @app.route('/movies/<year>')
 def getMoviesOfYear(year):
 	year = int(year)
+	code_to_label = {}
 	data = []
 	the_movies = [x for x in movies[year]]
 	#shuffle(the_movies)
 	for movie in the_movies:
 		code = movie[1].split()[-1][1:-1]
 		data.append(dict(title=movie[0], youtube_code=code))
-	return jsonify(dict(result=data))
+		code_to_label[code] = movie_indices[code]
+	return jsonify(dict(result=data, labels=code_to_label))
 
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 5000))

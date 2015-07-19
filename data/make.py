@@ -280,6 +280,7 @@ def getYoutubeVideos(songs):
             q=song.keywords,
             part='id,snippet',
             type='video',
+            videoEmbeddable='true',
             maxResults=1
           ).execute()
 
@@ -289,7 +290,7 @@ def getYoutubeVideos(songs):
             videos.append("%s (%s)" % (item["snippet"]["title"],
                                          item["id"]["videoId"]))
         else:
-            print 'WARNING: No Item for (TITLE:%s, SINGER:%s)' % (song.title, song.singer)
+            print 'WARNING: No Item for (%s)' % song.keywords
 
     for song, video in zip(songs, videos):
         results.append((song.title, video))
@@ -338,25 +339,24 @@ for year in ():
     cPickle.dump(results, open('pickles/songs/_pickled_youtube_%s' % year, 'w'))
 '''
 
-'''
+
+
 # Movies
-for year in (2009, 2008, 2007, 2006):
+for year in xrange(1972, 2015):
     movies = getTopHundredMovies(year)
     movies = map(_tempObj, movies)
     results = getYoutubeVideos(movies)
-    cPickle.dump(results, open('pickles/movies/_pickled_youtube_%s' % year, 'w'))
+    cPickle.dump(results, open('pickles4/movies/_pickled_youtube_%s' % year, 'w'))
+
+
 '''
-
-
-
 # Songs Wiki
-for year in xrange(2000, 2006):
+for year in xrange(1960, 2006):
     songs = getTopHundredsFromWiki2(year)
-    results = getYoutubeVideos(songs[:2])
-    print results
-    break
-    #cPickle.dump(results, open('pickles4/songs/_pickled_youtube_%s' % year, 'w'))
+    results = getYoutubeVideos(songs)
+    cPickle.dump(results, open('pickles4/songs/_pickled_youtube_%s' % year, 'w'))
 
+'''
 
 
 
@@ -515,6 +515,14 @@ for year in []: #xrange(1960, 2006):
         wiki_keyword = '%s (%s song)' % (song_info.title.strip(), song_info.singer.strip())
         youtube_to_wiki[youtube_code] = wiki_keyword
     songs[year] = youtube_to_wiki
+'''
+
+
+'''
+# Embeddable test
+song = Song('(Everything I Do) I Do It For You', 'Bryans Adam')
+x = getYoutubeVideos([song])
+print x
 '''
 
 
