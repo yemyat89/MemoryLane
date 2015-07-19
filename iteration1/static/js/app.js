@@ -24,11 +24,12 @@ my_app.controller('HomeController', ['$location', function($location) {
   var self = this;
   self.years_display = [];
 
-  for (i = 2006; i < 2015; i++) {
+  for (i = 1960; i < 2015; i++) {
     self.years_display.push(i);
   }
-  
-  if (player !== 0) {
+
+
+  if (player !== 0 && player !== undefined) {
     $("#player_container").hide();
     if (player.getPlayerState() == 1) {
       player.stopVideo();

@@ -1,11 +1,13 @@
 from random import shuffle
 from flask import (Flask, request, make_response, jsonify, redirect)
-from util import getData
+from util import getData, getData2
 import os
 
 app = Flask(__name__)
 
 songs, movies = getData()
+_t = getData2()
+songs.update(_t)
 
 @app.route('/')
 def index():
@@ -16,7 +18,7 @@ def getSongsOfYear(year):
 	year = int(year)
 	data = []
 	the_songs = [x for x in songs[year]]
-	shuffle(the_songs)
+	#shuffle(the_songs)
 	for song in the_songs:
 		code = song[1].split()[-1][1:-1]
 		data.append(dict(title=song[0], youtube_code=code))
@@ -27,7 +29,7 @@ def getMoviesOfYear(year):
 	year = int(year)
 	data = []
 	the_movies = [x for x in movies[year]]
-	shuffle(the_movies)
+	#shuffle(the_movies)
 	for movie in the_movies:
 		code = movie[1].split()[-1][1:-1]
 		data.append(dict(title=movie[0], youtube_code=code))

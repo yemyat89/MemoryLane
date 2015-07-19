@@ -1,0 +1,1411 @@
+(lp1
+ccopy_reg
+_reconstructor
+p2
+(c__main__
+Song
+p3
+c__builtin__
+object
+p4
+NtRp5
+(dp6
+S'keywords'
+p7
+VHAPPY Pharrell Williams 
+p8
+sS'singer'
+p9
+VPharrell Williams 
+p10
+sS'title'
+p11
+VHAPPY
+p12
+sbag2
+(g3
+g4
+NtRp13
+(dp14
+g7
+VDARK HORSE Katy Perry Featuring Juicy J 
+p15
+sg9
+VKaty Perry Featuring Juicy J 
+p16
+sg11
+VDARK HORSE
+p17
+sbag2
+(g3
+g4
+NtRp18
+(dp19
+g7
+VALL OF ME John Legend 
+p20
+sg9
+VJohn Legend 
+p21
+sg11
+VALL OF ME
+p22
+sbag2
+(g3
+g4
+NtRp23
+(dp24
+g7
+VFANCY Iggy Azalea Featuring Charli XCX 
+p25
+sg9
+VIggy Azalea Featuring Charli XCX 
+p26
+sg11
+VFANCY
+p27
+sbag2
+(g3
+g4
+NtRp28
+(dp29
+g7
+VCOUNTING STARS OneRepublic 
+p30
+sg9
+VOneRepublic 
+p31
+sg11
+VCOUNTING STARS
+p32
+sbag2
+(g3
+g4
+NtRp33
+(dp34
+g7
+VTALK DIRTY Jason Derulo Featuring 2 Chainz 
+p35
+sg9
+VJason Derulo Featuring 2 Chainz 
+p36
+sg11
+VTALK DIRTY
+p37
+sbag2
+(g3
+g4
+NtRp38
+(dp39
+g7
+VRUDE MAGIC! 
+p40
+sg9
+VMAGIC! 
+p41
+sg11
+VRUDE
+p42
+sbag2
+(g3
+g4
+NtRp43
+(dp44
+g7
+VALL ABOUT THAT BASS Meghan Trainor 
+p45
+sg9
+VMeghan Trainor 
+p46
+sg11
+VALL ABOUT THAT BASS
+p47
+sbag2
+(g3
+g4
+NtRp48
+(dp49
+g7
+VPROBLEM Ariana Grande Featuring Iggy Azalea 
+p50
+sg9
+VAriana Grande Featuring Iggy Azalea 
+p51
+sg11
+VPROBLEM
+p52
+sbag2
+(g3
+g4
+NtRp53
+(dp54
+g7
+VSTAY WITH ME Sam Smith 
+p55
+sg9
+VSam Smith 
+p56
+sg11
+VSTAY WITH ME
+p57
+sbag2
+(g3
+g4
+NtRp58
+(dp59
+g7
+VTIMBER Pitbull Featuring Ke$ha 
+p60
+sg9
+VPitbull Featuring Ke$ha 
+p61
+sg11
+VTIMBER
+p62
+sbag2
+(g3
+g4
+NtRp63
+(dp64
+g7
+VPOMPEII Bastille 
+p65
+sg9
+VBastille 
+p66
+sg11
+VPOMPEII
+p67
+sbag2
+(g3
+g4
+NtRp68
+(dp69
+g7
+VSHAKE IT OFF Taylor Swift 
+p70
+sg9
+VTaylor Swift 
+p71
+sg11
+VSHAKE IT OFF
+p72
+sbag2
+(g3
+g4
+NtRp73
+(dp74
+g7
+VAM I WRONG Nico & Vinz 
+p75
+sg9
+VNico & Vinz 
+p76
+sg11
+VAM I WRONG
+p77
+sbag2
+(g3
+g4
+NtRp78
+(dp79
+g7
+VTURN DOWN FOR WHAT DJ Snake & Lil Jon 
+p80
+sg9
+VDJ Snake & Lil Jon 
+p81
+sg11
+VTURN DOWN FOR WHAT
+p82
+sbag2
+(g3
+g4
+NtRp83
+(dp84
+g7
+VTHE MONSTER Eminem Featuring Rihanna 
+p85
+sg9
+VEminem Featuring Rihanna 
+p86
+sg11
+VTHE MONSTER
+p87
+sbag2
+(g3
+g4
+NtRp88
+(dp89
+g7
+VSAY SOMETHING A Great Big World & Christina Aguilera 
+p90
+sg9
+VA Great Big World & Christina Aguilera 
+p91
+sg11
+VSAY SOMETHING
+p92
+sbag2
+(g3
+g4
+NtRp93
+(dp94
+g7
+VTEAM Lorde 
+p95
+sg9
+VLorde 
+p96
+sg11
+VTEAM
+p97
+sbag2
+(g3
+g4
+NtRp98
+(dp99
+g7
+VLET HER GO Passenger 
+p100
+sg9
+VPassenger 
+p101
+sg11
+VLET HER GO
+p102
+sbag2
+(g3
+g4
+NtRp103
+(dp104
+g7
+VROYALS Lorde 
+p105
+sg9
+VLorde 
+p106
+sg11
+VROYALS
+p107
+sbag2
+(g3
+g4
+NtRp108
+(dp109
+g7
+VLET IT GO Idina Menzel 
+p110
+sg9
+VIdina Menzel 
+p111
+sg11
+VLET IT GO
+p112
+sbag2
+(g3
+g4
+NtRp113
+(dp114
+g7
+VWAKE ME UP! Avicii 
+p115
+sg9
+VAvicii 
+p116
+sg11
+VWAKE ME UP!
+p117
+sbag2
+(g3
+g4
+NtRp118
+(dp119
+g7
+VDEMONS Imagine Dragons 
+p120
+sg9
+VImagine Dragons 
+p121
+sg11
+VDEMONS
+p122
+sbag2
+(g3
+g4
+NtRp123
+(dp124
+g7
+VSTORY OF MY LIFE One Direction 
+p125
+sg9
+VOne Direction 
+p126
+sg11
+VSTORY OF MY LIFE
+p127
+sbag2
+(g3
+g4
+NtRp128
+(dp129
+g7
+VCHANDELIER Sia 
+p130
+sg9
+VSia 
+p131
+sg11
+VCHANDELIER
+p132
+sbag2
+(g3
+g4
+NtRp133
+(dp134
+g7
+VBLACK WIDOW Iggy Azalea Featuring Rita Ora 
+p135
+sg9
+VIggy Azalea Featuring Rita Ora 
+p136
+sg11
+VBLACK WIDOW
+p137
+sbag2
+(g3
+g4
+NtRp138
+(dp139
+g7
+VBANG BANG Jessie J, Ariana Grande & Nicki Minaj 
+p140
+sg9
+VJessie J, Ariana Grande & Nicki Minaj 
+p141
+sg11
+VBANG BANG
+p142
+sbag2
+(g3
+g4
+NtRp143
+(dp144
+g7
+VLATCH Disclosure Featuring Sam Smith 
+p145
+sg9
+VDisclosure Featuring Sam Smith 
+p146
+sg11
+VLATCH
+p147
+sbag2
+(g3
+g4
+NtRp148
+(dp149
+g7
+VMAPS Maroon 5 
+p150
+sg9
+VMaroon 5 
+p151
+sg11
+VMAPS
+p152
+sbag2
+(g3
+g4
+NtRp153
+(dp154
+g7
+VLOYAL Chris Brown Featuring Lil Wayne & French Montana Or Too $hort Or Tyga 
+p155
+sg9
+VChris Brown Featuring Lil Wayne & French Montana Or Too $hort Or Tyga 
+p156
+sg11
+VLOYAL
+p157
+sbag2
+(g3
+g4
+NtRp158
+(dp159
+g7
+VBEST DAY OF MY LIFE American Authors 
+p160
+sg9
+VAmerican Authors 
+p161
+sg11
+VBEST DAY OF MY LIFE
+p162
+sbag2
+(g3
+g4
+NtRp163
+(dp164
+g7
+VHABITS (STAY HIGH) Tove Lo 
+p165
+sg9
+VTove Lo 
+p166
+sg11
+VHABITS (STAY HIGH)
+p167
+sbag2
+(g3
+g4
+NtRp168
+(dp169
+g7
+VSUMMER Calvin Harris 
+p170
+sg9
+VCalvin Harris 
+p171
+sg11
+VSUMMER
+p172
+sbag2
+(g3
+g4
+NtRp173
+(dp174
+g7
+VBOOM CLAP Charli XCX 
+p175
+sg9
+VCharli XCX 
+p176
+sg11
+VBOOM CLAP
+p177
+sbag2
+(g3
+g4
+NtRp178
+(dp179
+g7
+VDRUNK IN LOVE Beyonce Featuring Jay Z 
+p180
+sg9
+VBeyonce Featuring Jay Z 
+p181
+sg11
+VDRUNK IN LOVE
+p182
+sbag2
+(g3
+g4
+NtRp183
+(dp184
+g7
+VANACONDA Nicki Minaj 
+p185
+sg9
+VNicki Minaj 
+p186
+sg11
+VANACONDA
+p187
+sbag2
+(g3
+g4
+NtRp188
+(dp189
+g7
+VBREAK FREE Ariana Grande Featuring Zedd 
+p190
+sg9
+VAriana Grande Featuring Zedd 
+p191
+sg11
+VBREAK FREE
+p192
+sbag2
+(g3
+g4
+NtRp193
+(dp194
+g7
+VBAILANDO Enrique Iglesias Featuring Descemer Bueno & Gente de Zona 
+p195
+sg9
+VEnrique Iglesias Featuring Descemer Bueno & Gente de Zona 
+p196
+sg11
+VBAILANDO
+p197
+sbag2
+(g3
+g4
+NtRp198
+(dp199
+g7
+VBURN Ellie Goulding 
+p200
+sg9
+VEllie Goulding 
+p201
+sg11
+VBURN
+p202
+sbag2
+(g3
+g4
+NtRp203
+(dp204
+g7
+VWIGGLE Jason Derulo Featuring Snoop Dogg 
+p205
+sg9
+VJason Derulo Featuring Snoop Dogg 
+p206
+sg11
+VWIGGLE
+p207
+sbag2
+(g3
+g4
+NtRp208
+(dp209
+g7
+VRATHER BE Clean Bandit Featuring Jess Glynne 
+p210
+sg9
+VClean Bandit Featuring Jess Glynne 
+p211
+sg11
+VRATHER BE
+p212
+sbag2
+(g3
+g4
+NtRp213
+(dp214
+g7
+VDON'T TELL 'EM Jeremih Featuring YG 
+p215
+sg9
+VJeremih Featuring YG 
+p216
+sg11
+VDON'T TELL 'EM
+p217
+sbag2
+(g3
+g4
+NtRp218
+(dp219
+g7
+VSHOW ME Kid Ink Featuring Chris Brown 
+p220
+sg9
+VKid Ink Featuring Chris Brown 
+p221
+sg11
+VSHOW ME
+p222
+sbag2
+(g3
+g4
+NtRp223
+(dp224
+g7
+VWRECKING BALL Miley Cyrus 
+p225
+sg9
+VMiley Cyrus 
+p226
+sg11
+VWRECKING BALL
+p227
+sbag2
+(g3
+g4
+NtRp228
+(dp229
+g7
+VNOT A BAD THING Justin Timberlake 
+p230
+sg9
+VJustin Timberlake 
+p231
+sg11
+VNOT A BAD THING
+p232
+sbag2
+(g3
+g4
+NtRp233
+(dp234
+g7
+VROAR Katy Perry 
+p235
+sg9
+VKaty Perry 
+p236
+sg11
+VROAR
+p237
+sbag2
+(g3
+g4
+NtRp238
+(dp239
+g7
+VAIN'T IT FUN Paramore 
+p240
+sg9
+VParamore 
+p241
+sg11
+VAIN'T IT FUN
+p242
+sbag2
+(g3
+g4
+NtRp243
+(dp244
+g7
+VTHE MAN Aloe Blacc 
+p245
+sg9
+VAloe Blacc 
+p246
+sg11
+VTHE MAN
+p247
+sbag2
+(g3
+g4
+NtRp248
+(dp249
+g7
+VTHIS IS HOW WE ROLL Florida Georgia Line Featuring Luke Bryan 
+p250
+sg9
+VFlorida Georgia Line Featuring Luke Bryan 
+p251
+sg11
+VTHIS IS HOW WE ROLL
+p252
+sbag2
+(g3
+g4
+NtRp253
+(dp254
+g7
+VCLASSIC MKTO 
+p255
+sg9
+VMKTO 
+p256
+sg11
+VCLASSIC
+p257
+sbag2
+(g3
+g4
+NtRp258
+(dp259
+g7
+VA SKY FULL OF STARS Coldplay 
+p260
+sg9
+VColdplay 
+p261
+sg11
+VA SKY FULL OF STARS
+p262
+sbag2
+(g3
+g4
+NtRp263
+(dp264
+g7
+VDON'T Ed Sheeran 
+p265
+sg9
+VEd Sheeran 
+p266
+sg11
+VDON'T
+p267
+sbag2
+(g3
+g4
+NtRp268
+(dp269
+g7
+VNA NA Trey Songz 
+p270
+sg9
+VTrey Songz 
+p271
+sg11
+VNA NA
+p272
+sbag2
+(g3
+g4
+NtRp273
+(dp274
+g7
+VHOT BOY Bobby Shmurda 
+p275
+sg9
+VBobby Shmurda 
+p276
+sg11
+VHOT BOY
+p277
+sbag2
+(g3
+g4
+NtRp278
+(dp279
+g7
+VHOLD ON, WE'RE GOING HOME Drake Featuring Majid Jordan 
+p280
+sg9
+VDrake Featuring Majid Jordan 
+p281
+sg11
+VHOLD ON, WE'RE GOING HOME
+p282
+sbag2
+(g3
+g4
+NtRp283
+(dp284
+g7
+VSING Ed Sheeran 
+p285
+sg9
+VEd Sheeran 
+p286
+sg11
+VSING
+p287
+sbag2
+(g3
+g4
+NtRp288
+(dp289
+g7
+VRADIOACTIVE Imagine Dragons 
+p290
+sg9
+VImagine Dragons 
+p291
+sg11
+VRADIOACTIVE
+p292
+sbag2
+(g3
+g4
+NtRp293
+(dp294
+g7
+VMY HITTA YG Featuring Jeezy & Rich Homie Quan 
+p295
+sg9
+VYG Featuring Jeezy & Rich Homie Quan 
+p296
+sg11
+VMY HITTA
+p297
+sbag2
+(g3
+g4
+NtRp298
+(dp299
+g7
+VCOOL KIDS Echosmith 
+p300
+sg9
+VEchosmith 
+p301
+sg11
+VCOOL KIDS
+p302
+sbag2
+(g3
+g4
+NtRp303
+(dp304
+g7
+VHEY BROTHER Avicii 
+p305
+sg9
+VAvicii 
+p306
+sg11
+VHEY BROTHER
+p307
+sbag2
+(g3
+g4
+NtRp308
+(dp309
+g7
+VTRUMPETS Jason Derulo 
+p310
+sg9
+VJason Derulo 
+p311
+sg11
+VTRUMPETS
+p312
+sbag2
+(g3
+g4
+NtRp313
+(dp314
+g7
+VANIMALS Maroon 5 
+p315
+sg9
+VMaroon 5 
+p316
+sg11
+VANIMALS
+p317
+sbag2
+(g3
+g4
+NtRp318
+(dp319
+g7
+VBURNIN' IT DOWN Jason Aldean 
+p320
+sg9
+VJason Aldean 
+p321
+sg11
+VBURNIN' IT DOWN
+p322
+sbag2
+(g3
+g4
+NtRp323
+(dp324
+g7
+VPLAY IT AGAIN Luke Bryan 
+p325
+sg9
+VLuke Bryan 
+p326
+sg11
+VPLAY IT AGAIN
+p327
+sbag2
+(g3
+g4
+NtRp328
+(dp329
+g7
+V2 ON Tinashe Featuring ScHoolboy Q 
+p330
+sg9
+VTinashe Featuring ScHoolboy Q 
+p331
+sg11
+V2 ON
+p332
+sbag2
+(g3
+g4
+NtRp333
+(dp334
+g7
+VDIRT Florida Georgia Line 
+p335
+sg9
+VFlorida Georgia Line 
+p336
+sg11
+VDIRT
+p337
+sbag2
+(g3
+g4
+NtRp338
+(dp339
+g7
+VLOVE RUNS OUT OneRepublic 
+p340
+sg9
+VOneRepublic 
+p341
+sg11
+VLOVE RUNS OUT
+p342
+sbag2
+(g3
+g4
+NtRp343
+(dp344
+g7
+VBOTTOMS UP Brantley Gilbert 
+p345
+sg9
+VBrantley Gilbert 
+p346
+sg11
+VBOTTOMS UP
+p347
+sbag2
+(g3
+g4
+NtRp348
+(dp349
+g7
+VSHOWER Becky G 
+p350
+sg9
+VBecky G 
+p351
+sg11
+VSHOWER
+p352
+sbag2
+(g3
+g4
+NtRp353
+(dp354
+g7
+VME AND MY BROKEN HEART Rixton 
+p355
+sg9
+VRixton 
+p356
+sg11
+VME AND MY BROKEN HEART
+p357
+sbag2
+(g3
+g4
+NtRp358
+(dp359
+g7
+VANIMALS Martin Garrix 
+p360
+sg9
+VMartin Garrix 
+p361
+sg11
+VANIMALS
+p362
+sbag2
+(g3
+g4
+NtRp363
+(dp364
+g7
+VLIFESTYLE Rich Gang Featuring Young Thug & Rich Homie Quan 
+p365
+sg9
+VRich Gang Featuring Young Thug & Rich Homie Quan 
+p366
+sg11
+VLIFESTYLE
+p367
+sbag2
+(g3
+g4
+NtRp368
+(dp369
+g7
+VAMERICAN KIDS Kenny Chesney 
+p370
+sg9
+VKenny Chesney 
+p371
+sg11
+VAMERICAN KIDS
+p372
+sbag2
+(g3
+g4
+NtRp373
+(dp374
+g7
+VBRAVE Sara Bareilles 
+p375
+sg9
+VSara Bareilles 
+p376
+sg11
+VBRAVE
+p377
+sbag2
+(g3
+g4
+NtRp378
+(dp379
+g7
+VSWEATER WEATHER The Neighbourhood 
+p380
+sg9
+VThe Neighbourhood 
+p381
+sg11
+VSWEATER WEATHER
+p382
+sbag2
+(g3
+g4
+NtRp383
+(dp384
+g7
+VLEAVE THE NIGHT ON Sam Hunt 
+p385
+sg9
+VSam Hunt 
+p386
+sg11
+VLEAVE THE NIGHT ON
+p387
+sbag2
+(g3
+g4
+NtRp388
+(dp389
+g7
+VNEW FLAME Chris Brown Featuring Usher & Rick Ross 
+p390
+sg9
+VChris Brown Featuring Usher & Rick Ross 
+p391
+sg11
+VNEW FLAME
+p392
+sbag2
+(g3
+g4
+NtRp393
+(dp394
+g7
+VLOVE NEVER FELT SO GOOD Michael Jackson & Justin Timberlake 
+p395
+sg9
+VMichael Jackson & Justin Timberlake 
+p396
+sg11
+VLOVE NEVER FELT SO GOOD
+p397
+sbag2
+(g3
+g4
+NtRp398
+(dp399
+g7
+VDRUNK ON A PLANE Dierks Bentley 
+p400
+sg9
+VDierks Bentley 
+p401
+sg11
+VDRUNK ON A PLANE
+p402
+sbag2
+(g3
+g4
+NtRp403
+(dp404
+g7
+VBIRTHDAY Katy Perry 
+p405
+sg9
+VKaty Perry 
+p406
+sg11
+VBIRTHDAY
+p407
+sbag2
+(g3
+g4
+NtRp408
+(dp409
+g7
+VBARTENDER Lady Antebellum 
+p410
+sg9
+VLady Antebellum 
+p411
+sg11
+VBARTENDER
+p412
+sbag2
+(g3
+g4
+NtRp413
+(dp414
+g7
+VLA LA LA Naughty Boy Featuring Sam Smith 
+p415
+sg9
+VNaughty Boy Featuring Sam Smith 
+p416
+sg11
+VLA LA LA
+p417
+sbag2
+(g3
+g4
+NtRp418
+(dp419
+g7
+VBLURRED LINES Robin Thicke Featuring T.I. + Pharrell 
+p420
+sg9
+VRobin Thicke Featuring T.I. + Pharrell 
+p421
+sg11
+VBLURRED LINES
+p422
+sbag2
+(g3
+g4
+NtRp423
+(dp424
+g7
+VDO WHAT U WANT Lady Gaga Featuring R. Kelly 
+p425
+sg9
+VLady Gaga Featuring R. Kelly 
+p426
+sg11
+VDO WHAT U WANT
+p427
+sbag2
+(g3
+g4
+NtRp428
+(dp429
+g7
+VCAN'T REMEMBER TO FORGET YOU Shakira Featuring Rihanna 
+p430
+sg9
+VShakira Featuring Rihanna 
+p431
+sg11
+VCAN'T REMEMBER TO FORGET YOU
+p432
+sbag2
+(g3
+g4
+NtRp433
+(dp434
+g7
+VAMNESIA 5 Seconds Of Summer 
+p435
+sg9
+V5 Seconds Of Summer 
+p436
+sg11
+VAMNESIA
+p437
+sbag2
+(g3
+g4
+NtRp438
+(dp439
+g7
+VNO MEDIOCRE T.I. Featuring Iggy Azalea 
+p440
+sg9
+VT.I. Featuring Iggy Azalea 
+p441
+sg11
+VNO MEDIOCRE
+p442
+sbag2
+(g3
+g4
+NtRp443
+(dp444
+g7
+VCOME WITH ME NOW KONGOS 
+p445
+sg9
+VKONGOS 
+p446
+sg11
+VCOME WITH ME NOW
+p447
+sbag2
+(g3
+g4
+NtRp448
+(dp449
+g7
+VBELIEVE ME Lil Wayne Featuring Drake 
+p450
+sg9
+VLil Wayne Featuring Drake 
+p451
+sg11
+VBELIEVE ME
+p452
+sbag2
+(g3
+g4
+NtRp453
+(dp454
+g7
+V23 Mike WiLL Made-It Featuring Miley Cyrus, Wiz Khalifa & Juicy J 
+p455
+sg9
+VMike WiLL Made-It Featuring Miley Cyrus, Wiz Khalifa & Juicy J 
+p456
+sg11
+V23
+p457
+sbag2
+(g3
+g4
+NtRp458
+(dp459
+g7
+VBEACHIN' Jake Owen 
+p460
+sg9
+VJake Owen 
+p461
+sg11
+VBEACHIN'
+p462
+sbag2
+(g3
+g4
+NtRp463
+(dp464
+g7
+VWHITE WALLS Macklemore & Ryan Lewis Featuring ScHoolboy Q & Hollis 
+p465
+sg9
+VMacklemore & Ryan Lewis Featuring ScHoolboy Q & Hollis 
+p466
+sg11
+VWHITE WALLS
+p467
+sbag2
+(g3
+g4
+NtRp468
+(dp469
+g7
+VSHE LOOKS SO PERFECT 5 Seconds Of Summer 
+p470
+sg9
+V5 Seconds Of Summer 
+p471
+sg11
+VSHE LOOKS SO PERFECT
+p472
+sbag2
+(g3
+g4
+NtRp473
+(dp474
+g7
+VSTAY THE NIGHT Zedd Featuring Hayley Williams 
+p475
+sg9
+VZedd Featuring Hayley Williams 
+p476
+sg11
+VSTAY THE NIGHT
+p477
+sbag2
+(g3
+g4
+NtRp478
+(dp479
+g7
+VPARTITION Beyonce 
+p480
+sg9
+VBeyonce 
+p481
+sg11
+VPARTITION
+p482
+sbag2
+(g3
+g4
+NtRp483
+(dp484
+g7
+VSTUDIO ScHoolboy Q Featuring BJ The Chicago Kid 
+p485
+sg9
+VScHoolboy Q Featuring BJ The Chicago Kid 
+p486
+sg11
+VSTUDIO
+p487
+sbag2
+(g3
+g4
+NtRp488
+(dp489
+g7
+V0 TO 100 / THE CATCH UP Drake 
+p490
+sg9
+VDrake 
+p491
+sg11
+V0 TO 100 / THE CATCH UP
+p492
+sbag2
+(g3
+g4
+NtRp493
+(dp494
+g7
+VI DON'T DANCE Lee Brice 
+p495
+sg9
+VLee Brice 
+p496
+sg11
+VI DON'T DANCE
+p497
+sbag2
+(g3
+g4
+NtRp498
+(dp499
+g7
+VSOMETHIN' BAD Miranda Lambert Duet With Carrie Underwood 
+p500
+sg9
+VMiranda Lambert Duet With Carrie Underwood 
+p501
+sg11
+VSOMETHIN' BAD
+p502
+sbag2
+(g3
+g4
+NtRp503
+(dp504
+g7
+VADORE YOU Miley Cyrus 
+p505
+sg9
+VMiley Cyrus 
+p506
+sg11
+VADORE YOU
+p507
+sba.

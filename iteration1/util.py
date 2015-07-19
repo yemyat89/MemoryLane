@@ -14,3 +14,15 @@ def getData():
 		movies[year] = data
 
 	return songs, movies
+
+def getData2():
+	path = 'data/pickles2'
+
+	songs = {}
+
+	for year in xrange(1960, 2006):
+		data = pickle.load(open('%s/songs/_pickled_youtube_%s' % (path, year), 'r'))
+		songs[year] = data
+
+	return songs
+
