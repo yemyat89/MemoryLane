@@ -16,7 +16,7 @@ def getData():
 	return songs, movies
 
 def getData2():
-	path = 'data/pickles2'
+	path = 'data/pickles4'
 
 	songs = {}
 

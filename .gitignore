@@ -1,5 +1,6 @@
 venv
 iteration1/venv
-data/make.py
+data/cred.mine
+data/wiki_info_experiment
 iteration1/data/make.py
 skips

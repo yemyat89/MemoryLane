@@ -67,8 +67,9 @@ my_app.controller('StudioController', ['$routeParams', '$http', '$scope', functi
   request_url += self.selected_year;
   $http.get(request_url)
     .success(function(data, status, headers, config) {
+      song_indices = data.labels;
       $.each(data.result, function(index, element){
-        element['title'] = element['title']
+        element['title'] = element['title'].replace('"', '');
         element['youtube_url'] = 'http://youtube.com/watch?v=' + element.youtube_code;
         element['youtube_thumbnail'] = 'http://img.youtube.com/vi/' + element.youtube_code + '/hqdefault.jpg';
         self.clips.push(element);
@@ -96,6 +97,10 @@ my_app.controller('StudioController', ['$routeParams', '$http', '$scope', functi
         console.log(id);
         $("a.inline").fancybox({
           'content': $('#'+ id).html(),
+          //'width': 400,
+          //'height': 600,
+          //'autoDimensions':false,
+          //'autoSize': false,
           'hideOnContentClick': true
         });
       });

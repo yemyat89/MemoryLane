@@ -38,13 +38,14 @@
   </a>
   <div style="display:none">
     <div id="{{ clip.youtube_code }}">
-      {{ clip.title }}
       <div>
         <a ng-href="{{ clip.youtube_url }}" target="_blank">
-          <img data-lightbox="ysongs" ng-src="{{ clip.youtube_thumbnail }}" width="300px"/>
+          <img data-lightbox="ysongs" ng-src="{{ clip.youtube_thumbnail }}" width="400px"/>
         </a>
       </div>
-
+      <div style="width:400px;word-wrap:break-word;font-weight:bold;padding-top:5px;padding-left:5px;">
+        {{ clip.title }}
+      </div>
     </div>
   </div>
 </div>
@@ -64,7 +65,7 @@
   }
   .item img {
     width: 100px;
-    height: auto;
+    height: 80px;
   }
 </style>
 

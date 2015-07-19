@@ -35,6 +35,10 @@
         <td style="vertical-align:top;">
           <div id="player_container">
             <div id="player" style="padding:5px;"></div>
+
+            <div id="current_song_title" style="word-wrap:break-word;font-weight:bold;padding-top:5px;padding-left:5px;">
+            </div>
+
             <hr/>
             <div><button id="stop_all" class="btn-primary">Stop Playing</button></div>
           </div>
@@ -63,12 +67,14 @@
 
       // YouTube player
       var tag = document.createElement('script');
+      var song_indices = 0;
 
       tag.src = "https://www.youtube.com/iframe_api";
       var firstScriptTag = document.getElementsByTagName('script')[0];
       firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
       var player = 0;
+
       function onYouTubeIframeAPIReady() {
         player = new YT.Player('player', {
           height: '180',
@@ -85,7 +91,18 @@
       }
 
       function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.PLAYING) {
+            var url = event.target.getVideoUrl();
+            
+            // "http://www.youtube.com/watch?v=gzDS-Kfd5XQ&feature=..."
+            var match = url.match(/[?&]v=([^&]+)/);
+            
+            // ["?v=gzDS-Kfd5XQ", "gzDS-Kfd5XQ"]
+            var videoId = match[1];
 
+            $('#current_song_title').html(song_indices[videoId]);
+
+        }
       }
 
 

@@ -9,20 +9,34 @@ songs, movies = getData()
 _t = getData2()
 songs.update(_t)
 
+song_indices = {}
+for v in songs.itervalues():
+	for each_song in v:
+		index = str(each_song[1].split()[-1][1:-1])
+		label = ' '.join(each_song[1].split()[:-1])
+		song_indices[index] = label
+
 @app.route('/')
 def index():
 	return make_response(open('templates/index.html').read())
 
+# Debug only
+@app.route('/get_song_indices')
+def get_song_indices():
+	return jsonify(dict(results=song_indices))
+
 @app.route('/songs/<year>')
 def getSongsOfYear(year):
 	year = int(year)
+	code_to_label = {}
 	data = []
 	the_songs = [x for x in songs[year]]
 	#shuffle(the_songs)
 	for song in the_songs:
 		code = song[1].split()[-1][1:-1]
 		data.append(dict(title=song[0], youtube_code=code))
-	return jsonify(dict(result=data))
+		code_to_label[code] = song_indices[code]
+	return jsonify(dict(result=data, labels=code_to_label))
 
 @app.route('/movies/<year>')
 def getMoviesOfYear(year):
