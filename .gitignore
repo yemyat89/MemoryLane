@@ -2,5 +2,5 @@ venv
 iteration1/venv
 data/cred.mine
 data/wiki_info_experiment
-iteration1/data/make.py
+data_bck_tmp
 skips
